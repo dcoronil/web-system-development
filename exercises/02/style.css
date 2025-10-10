@@ -1,0 +1,61 @@
+:root {
+  --bg: #f6f7fb;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --brand: #0f62fe;
+  --card: #ffffff;
+  --border: #e5e7eb;
+}
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.site-header, .site-main, .site-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid var(--border);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo-loyola { height: 56px; width: auto; }
+h1 { margin: 0; }
+h2 { margin-top: 28px; margin-bottom: 8px; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.interests { padding-left: 20px; margin-bottom: 12px; }
+.interests li { padding: 4px 0; border-bottom: 1px dashed var(--border); }
+.interests li:last-child { border-bottom: none; }
+
+.kali-img { display: block; max-width: 140px; margin-top: 8px; }
+
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+  padding-top: 20px;
+  padding-bottom: 28px;
+}
